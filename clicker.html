@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+	<body>
+		<button onclick="submit()">Click Me!</button>
+		<p id="output"></p>
+		<script>
+			var clicks = 0;
+			
+			function submit() {
+				document.getElementById("output").innerHTML = "Clicks: " + clicks.toString();
+				clicks += 1;
+			}
+		</script>
+	</body>
+</html>
