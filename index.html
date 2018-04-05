@@ -3,13 +3,32 @@
 	<body>
 		<button onclick="submit()">Click Me!</button>
 		<p id="output"></p>
+		<p id="bonus"></p>
 		<script>
-			var clicks = 0;
+			var clicks = 1300;
 			
 			function submit() {
 				document.getElementById("output").innerHTML = "Clicks: " + clicks.toString();
 				clicks += 1;
-			}
+				bonus = document.getElementById("bonus");
+				if (clicks == 10) {
+					bonus.innerHTML = "You got 10!"
+				}
+				if (clicks == 100) {
+					bonus.innerHTML = "You got 100!"
+				}
+				if (clicks == 250) {
+					bonus.innerHTML = "You got 250!"
+				}
+				if (clicks == 500) {
+					bonus.innerHTML = "You got 500!"
+				}
+				if (clicks == 1000) {
+					bonus.innerHTML = "You got 1000!"
+				}
+				if (clicks == 1337) {
+					bonus.innerHTML = "You beat the game!"
+				}
 		</script>
 	</body>
 </html>
