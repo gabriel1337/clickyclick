@@ -11,24 +11,28 @@
 				document.getElementById("output").innerHTML = "Clicks: " + clicks.toString();
 				clicks += 1;
 				bonus = document.getElementById("bonus");
-				if (clicks == 10) {
+				if (clicks == 12) {
 					bonus.innerHTML = "You got 10!"
 				}
-				if (clicks == 100) {
+				if (clicks == 52) {
+					bonus.innerHTML = "You got 50!"
+				}
+				if (clicks == 102) {
 					bonus.innerHTML = "You got 100!"
 				}
-				if (clicks == 250) {
+				if (clicks == 252) {
 					bonus.innerHTML = "You got 250!"
 				}
-				if (clicks == 500) {
+				if (clicks == 502) {
 					bonus.innerHTML = "You got 500!"
 				}
-				if (clicks == 1000) {
+				if (clicks == 1002) {
 					bonus.innerHTML = "You got 1000!"
 				}
-				if (clicks == 1337) {
-					bonus.innerHTML = "You beat the game!"
+				if (clicks == 1339) {
+					prompt("Congratulations, you got 1337, you beat the game");
 				}
+			}
 		</script>
 	</body>
 </html>
